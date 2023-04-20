@@ -1,9 +1,16 @@
 #!/usr/bin/python3
 
-""" minimum operations """
+""" Minimum Operations """
+
 
 def minOperations(n):
-
+    """
+    Calculates the fewest number of operations needed to
+    result in exactly n(number) H(single character)
+    characters in the file.
+    Returns an integer
+    If n is impossible to achieve, returns 0
+    """
     if not isinstance(n, int):
         return 0
 
@@ -14,7 +21,5 @@ def minOperations(n):
             n = int(n / i)
             op += i
             i = 1
-
         i += 1
-
     return op
