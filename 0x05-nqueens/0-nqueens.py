@@ -4,6 +4,7 @@ Interview Preparation ― Algorithms
 """
 from sys import argv, exit
 
+
 def solveNQueens(n):
     """ Program that solves the N queens problem """
     res = []
