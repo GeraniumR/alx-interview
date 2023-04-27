@@ -14,15 +14,15 @@ def solveNQueens(n):
 
     def dfs(index):
         """Recursively resolves the N queens problem"""
-        if index == len(queens):  # n queens have been placed correctly
+        if index == len(queens): 
             res.append(queens[:])
             return  # backtracking
         for i in range(len(queens)):
             queens[index] = i
-            if valid(index):  # pruning
+            if valid(index):  
                 dfs(index + 1)
 
-    # checking if nth queens can be placed
+    
     def valid(n):
         """ A method that checks if a position in the board is valid """
         for i in range(n):
@@ -36,7 +36,7 @@ def solveNQueens(n):
     # [[0, 1], [1, 3], [2, 0], [3, 2]]
 
     def make_all_boards(res):
-        """Method that builts the List that be returned"""
+        """ A method that builds the List that be returned """
         actual_boards = []
         for queens in res:
             board = []
