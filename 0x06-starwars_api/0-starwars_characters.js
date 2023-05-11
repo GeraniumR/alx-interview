@@ -1,5 +1,6 @@
 #!/usr/bin/node
-// prints all characters of a Star Wars movie synchroniously
+
+
 const request = require('request');
 const myArgs = process.argv.splice(2);
 const URL = 'https://swapi-api.hbtn.io/api/films/' + myArgs[0];
@@ -25,4 +26,4 @@ request.get(URL, async (err, response, body) => {
       console.log(JSON.parse(result).name);
     }
   }
-});
+})
