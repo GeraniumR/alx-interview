@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-""" makechange challenge """
+""" make change challenge """
 
 
 def makeChange(coins, total):
     """
-    mkechange challenge
+    mke change challenge
     """
 
     if total <= 0:
