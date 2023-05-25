@@ -4,7 +4,7 @@
 
 def makeChange(coins, total):
     """
-    mke change challenge
+    make change challenge
     """
 
     if total <= 0:
